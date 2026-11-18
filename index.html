@@ -2,12 +2,15 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Fórmula Resolvente</title>
+  <title>FÃ³rmula Resolvente</title>
 </head>
 <body>
 
   <script>
-    let a = Number(prompt("Valor de a:"));
+    let a;
+    do {
+    a = Number(prompt("Valor de a:"));
+    } while (a === 0);
     let b = Number(prompt("Valor de b:"));
     let c = Number(prompt("Valor de c:"));
     let delta = b * b - 4 * a * c;
@@ -16,7 +19,7 @@
       let x2 = (-b - Math.sqrt(delta)) / (2 * a);
       alert("x1 = " + x1 + " e x2 = " + x2);
     } else {
-      alert("Não existem raízes reais.");
+      alert("NÃ£o existem raÃ­zes reais.");
     }
   </script>
 
